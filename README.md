@@ -1,17 +1,39 @@
-# Web Vuln Scanner — MVP
+# 🛡️ Web Application Vulnerability Scanner — MVP
 
-Minimal Viable Product (MVP) of a Web Application Vulnerability Scanner.
-**For authorised testbeds only** (DVWA, bWAPP, WebGoat, etc.).
+A lightweight, beginner-friendly vulnerability scanner for educational and authorized security testing.
 
-## Features (MVP)
-- Scans GET query parameters for:
-  - SQL Injection (error + reflection)
-  - Reflected XSS (simple reflection)
-  - Directory Traversal (indicator-based)
-- Basic security headers check (CSP, X-Frame-Options, X-Content-Type-Options, Strict-Transport-Security)
-- Generates JSON and simple HTML reports in `reports/`
+## 🚀 Features
+- Security header analysis (CSP, HSTS, XFO, XCTO)
+- SQL Injection (error/reflection-based)
+- Reflected XSS detection
+- Directory Traversal testing
+- HTML + JSON reporting system
 
-## Quick start
-1. Create virtualenv: `python -m venv venv && source venv/bin/activate` (Linux/macOS) or `venv\Scripts\activate` (Windows)
-2. Install: `pip install -r requirements.txt`
-3. Run: `python main.py --url 'http://localhost/vuln.php?id=1' --timeout 8`
+## 📦 Installation
+```bash
+pip install -r requirements.txt
+```
+
+## ▶️ Usage
+```bash
+python main.py --url "http://example.com/?search=test"
+```
+
+## 📁 Project Structure
+```
+web-vuln-scanner-mvp/
+│ main.py
+│ config.py
+│ payloads.py
+│ requirements.txt
+│
+└── scanners/
+       sqli.py
+       xss.py
+       traversal.py
+       headers.py
+```
+
+## ⚠️ Legal Disclaimer
+Use this tool **only** on websites you own or have **explicit written permission** to test.
+Unauthorized scanning is illegal.
