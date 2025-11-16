@@ -1,0 +1,41 @@
+{
+  "target": "https://xss-game.appspot.com/level1/frame",
+  "generated_at": "20251116T154418Z",
+  "summary": {
+    "total_findings": 4
+  },
+  "findings": [
+    {
+      "type": "Security Header Missing",
+      "param": "Strict-Transport-Security",
+      "payload": "N/A",
+      "evidence": "Missing or weak HSTS",
+      "status_code": 200,
+      "url": "https://xss-game.appspot.com/level1/frame"
+    },
+    {
+      "type": "Security Header Missing",
+      "param": "X-Frame-Options",
+      "payload": "N/A",
+      "evidence": "Missing X-Frame-Options",
+      "status_code": 200,
+      "url": "https://xss-game.appspot.com/level1/frame"
+    },
+    {
+      "type": "Security Header Missing",
+      "param": "X-Content-Type-Options",
+      "payload": "N/A",
+      "evidence": "Missing X-Content-Type-Options",
+      "status_code": 200,
+      "url": "https://xss-game.appspot.com/level1/frame"
+    },
+    {
+      "type": "Security Header Missing",
+      "param": "Content-Security-Policy",
+      "payload": "N/A",
+      "evidence": "Missing Content-Security-Policy (CSP)",
+      "status_code": 200,
+      "url": "https://xss-game.appspot.com/level1/frame"
+    }
+  ]
+}
